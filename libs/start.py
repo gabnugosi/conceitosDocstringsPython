@@ -1,9 +1,9 @@
 """ arquivo de teste de conceitos """
 
-from typing import Type
-from atleta import Atleta 
+from typing import Type, Union
+from .atleta import Atleta 
 
-def aggregation(element_1: str, element_2: str) -> str: 
+def aggregation(element_1: Union[str, int], element_2: Union[str, int]) -> Union[str, int]: 
     """ create an agregatin with two elements
      :param - element_1: string with first element 
             - element_2: string with second element 
